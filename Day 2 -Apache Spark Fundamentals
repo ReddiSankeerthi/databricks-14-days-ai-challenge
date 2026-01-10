@@ -64,3 +64,13 @@ events.groupBy("event_type").count().show()
 
 # Order by count
 events.groupBy("brand").count().orderBy("count", ascending=False).show()
+
+---
+
+## LinkedIn Post (Day 2 – Apache Spark Fundamentals)
+I documented my Day 2 learning from the Databricks AI Challenge on LinkedIn.
+
+🔗 **Post Link:**  
+https://www.linkedin.com/posts/maddinareddisankeerthi_databrickswithidc-codebasics-indiandataclub-activity-7415710013400199168-uCwg?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFxGtfwBB5nhO5M2F5A9lGeNvQx8T-786JY
+
+👤 **Author:** Maddina Reddi Sankeerthi
