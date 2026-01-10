@@ -1,0 +1,66 @@
+# Databricks AI Challenge – Spark Basics
+
+## About This Repository
+This repository contains my learning and hands-on practice from the Databricks AI Challenge.  
+I am a beginner exploring Apache Spark using Databricks Community Edition.
+
+---
+
+## Concepts Covered
+- Apache Spark overview
+- Spark DataFrame basics
+- select() – choosing required columns
+- filter() – applying conditions
+- groupBy() – grouping similar values
+- count() – counting number of rows
+- orderBy() – sorting data
+
+---
+
+## Dataset Used
+- E-commerce events dataset (CSV format)
+- Loaded using Spark DataFrame
+
+---
+
+## Sample Code
+```python
+# Load data
+events = spark.read.csv(
+    "/Volumes/workspace/default/ecommerce_data/2019-Oct.csv",
+    header=True,
+    inferSchema=True
+)
+
+# Select columns
+events.select("event_type", "product_id", "price").show()
+
+# Filter data
+events.filter("price > 100").count()
+
+# Group and count
+events.groupBy("event_type").count().show()
+
+# Order by count
+events.groupBy("brand").count().orderBy("count", ascending=False).show()
+
+## Sample Code
+```python
+# Load data
+events = spark.read.csv(
+    "/Volumes/workspace/default/ecommerce_data/2019-Nov.csv",
+    header=True,
+    inferSchema=True
+)
+
+# Select columns
+events.select("event_type", "product_id", "price").show()
+
+# Filter data
+events.filter("price > 100").count()
+
+# Group and count
+events.groupBy("event_type").count().show()
+
+# Order by count
+events.groupBy("brand").count().orderBy("count", ascending=False).show()
