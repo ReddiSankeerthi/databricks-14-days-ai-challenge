@@ -1,0 +1,43 @@
+# Day 3 – PySpark Transformations Deep Dive
+### 14 Days AI Challenge
+
+This repository contains my hands-on work for **Day 3** of the *14 Days AI Challenge*, focused on understanding and applying **PySpark transformations** on an e-commerce dataset.
+
+---
+
+## 📚 Topics Covered
+- PySpark vs Pandas comparison
+- Joins: Inner, Left, Right, Outer
+- Window Functions (running totals, rankings)
+- User-Defined Functions (UDFs)
+
+---
+
+## 🛠️ Tasks Performed
+- Loaded a full e-commerce dataset
+- Performed complex joins
+- Calculated running totals using window functions
+- Created derived features for analysis
+
+---
+
+## 🧪 Tools Used
+- PySpark
+- Databricks Community Edition
+- Python
+
+---
+
+## 📈 Key Learnings
+- PySpark is efficient for large-scale data processing
+- Window functions help perform advanced analytics without collapsing data
+- Feature engineering plays a crucial role in data analysis
+
+---
+
+## 🙏 Acknowledgements
+
+Thanks to **Indian Data Club** and **CodeBasics** for organizing the 14 Days AI Challenge.
+
+HERE IS MY LINK TO LOOK MY WORK https://www.linkedin.com/posts/maddinareddisankeerthi_databrickswithidc-databricks-codebasics-activity-7416125125546135552-g2-u?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFxGtfwBB5nhO5M2F5A9lGeNvQx8T-786JY
+**Author** Maddina Reddi Sankeerthi
