@@ -1,0 +1,33 @@
+# Day 4 – Delta Lake Introduction 🚀
+
+This repository contains my learnings and hands-on practice from **Day 4 of the Databricks AI Challenge**.
+
+## 📘 Concepts Learned
+- What is Delta Lake?
+- ACID transactions in Delta Lake
+- Schema enforcement
+- Delta Lake vs Parquet
+
+## 🛠️ Hands-on Tasks
+- Converted CSV files to Delta format
+- Created Delta tables using SQL
+- Created Delta tables using PySpark
+- Tested schema enforcement
+- Handled duplicate inserts
+
+## 🧠 Key Takeaway
+Delta Lake adds reliability, data quality, and performance to data lakes by combining the best of data warehouses and data lakes.
+
+## 🔗 LinkedIn Post
+[https://www.linkedin.com/posts/maddinareddisankeerthi_databrickswithidc-indiandataclub-databricks-activity-7416476324770287616-_cKJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFxGtfwBB5nhO5M2F5A9lGeNvQx8T-786JY]
+## 📌 Tech Stack
+- Databricks
+- Apache Spark
+- PySpark
+- SQL
+- Delta Lake
+
+---
+
+✨ *Part of my continuous learning journey in Data Analytics & Data Engineering.*
+  https://www.linkedin.com/posts/maddinareddisankeerthi_databrickswithidc-indiandataclub-databricks-activity-7416476324770287616-_cKJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFxGtfwBB5nhO5M2F5A9lGeNvQx8T-786JY
