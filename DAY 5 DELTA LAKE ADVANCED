@@ -1,0 +1,59 @@
+# Databricks 14 Days AI Challenge – Day 05  
+## Topic: Delta Lake (Advanced)
+
+This repository contains my work and learnings from **Day 05** of the **Databricks 14 Days AI Challenge** organized by **Indian Data Club (IDC)**.
+
+---
+
+## 📌 What I Learned & Implemented
+
+### 1️⃣ Incremental MERGE (Upsert Operations)
+- Implemented **incremental MERGE** to update existing records and insert new records into Delta tables.
+- Avoided full table reloads, making the data pipeline more efficient.
+
+**Benefit:** Improves performance and reduces compute cost.
+
+---
+
+### 2️⃣ Querying Historical Versions (Time Travel)
+- Used **Delta Lake Time Travel** to query previous versions of a table.
+- Enabled access to data using version numbers and timestamps.
+
+**Benefit:** Useful for auditing, debugging, and data recovery.
+
+---
+
+### 3️⃣ Optimizing Delta Tables
+- Applied optimization techniques to reduce small files.
+- Improved data layout for faster query execution.
+
+**Benefit:** Enhances query performance and resource utilization.
+
+---
+
+### 4️⃣ Cleaning Old Files
+- Removed unused and outdated files from Delta tables.
+- Managed storage effectively.
+
+**Benefit:** Keeps the data lake clean and cost-efficient.
+
+---
+
+## 🧠 Key Takeaways
+Delta Lake provides:
+- ACID transactions  
+- Data versioning  
+- High performance  
+- Reliability for production-grade data pipelines  
+
+This challenge helped me gain hands-on experience with **advanced Delta Lake features used in real-world data engineering workflows**.
+
+---
+
+## 🔗 Connect with Me
+- **LinkedIn:** https://www.linkedin.com/posts/maddinareddisankeerthi_databrickswithidc-indiandataclub-databricks-activity-7416843451100499968--Cdb?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFxGtfwBB5nhO5M2F5A9lGeNvQx8T-786JY
+
+---
+
+### 🔖 Hashtags
+`#DatabricksWithIDC #IndianDataClub #DeltaLake #DataEngineering #BigData`
