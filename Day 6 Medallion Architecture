@@ -1,0 +1,79 @@
+# Databricks Medallion Architecture
+
+## Databricks 14 Days AI Challenge – Day 06
+
+---
+
+## About the Project
+This project is part of the **Databricks 14 Days AI Challenge** by **Indian Data Club** and **Codebasics**.  
+It demonstrates the implementation of **Medallion Architecture (Bronze, Silver, Gold)** using **Databricks and PySpark**.
+
+The project shows how raw data is processed step by step to create clean, analytics-ready data.
+
+---
+
+## Objective
+To design and implement a layered data pipeline that transforms raw data into meaningful business insights using Medallion Architecture.
+
+---
+
+## Architecture / Approach
+The project follows **Medallion Architecture**:
+
+- **Bronze Layer** – Raw data ingestion  
+- **Silver Layer** – Data cleaning and validation  
+- **Gold Layer** – Business-level aggregations  
+
+Each layer is stored as a **Delta table**.
+
+---
+
+## Implementation
+
+### Bronze Layer
+- Ingested raw CSV data
+- Used schema inference and headers
+- Added ingestion timestamp
+- Stored raw data without transformations
+
+### Silver Layer
+- Removed duplicate records
+- Filtered invalid values (null or negative prices)
+- Trimmed important columns (`product_id`, `user_id`)
+- Stored cleaned data as Delta table
+
+### Gold Layer
+- Aggregated data by `product_id` and `category_id`
+- Calculated:
+  - Total views
+  - Total purchases
+  - Total revenue
+  - Conversion rate
+- Stored analytics-ready data as Delta table
+
+---
+
+## Technologies Used
+- Databricks (Free Edition)
+- PySpark
+- Delta Lake
+
+---
+
+## Key Learnings
+- Understanding Medallion Architecture in practice
+- How data flows from Bronze → Silver → Gold
+- Importance of data quality and layered design
+- Hands-on experience with Databricks and PySpark
+
+---
+
+## Conclusion
+This project helped me understand real-world data pipeline design and strengthened my foundation in data engineering and analytics concepts.
+
+---
+
+## Author
+Reddi Sankeerthi
+##LINKEDIN POST LINK 
+https://www.linkedin.com/posts/maddinareddisankeerthi_databrickswithidc-codebasics-indiandataclub-activity-7417223031393042433-RDWl?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFxGtfwBB5nhO5M2F5A9lGeNvQx8T-786JY
