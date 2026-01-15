@@ -1,0 +1,36 @@
+# Day 7 – Databricks 14 Days AI Challenge
+
+## Overview
+Built an end-to-end data pipeline using Databricks Jobs with multi-task workflows.
+The pipeline follows the Medallion Architecture (Bronze → Silver → Gold) and is fully
+parameterized, scheduled, and automated.
+
+## Key Concepts
+- Databricks Jobs vs Notebooks
+- Multi-task workflows with dependencies
+- Medallion Architecture (Bronze, Silver, Gold)
+- Runtime parameters using widgets
+- Job scheduling and error handling
+
+## What Was Implemented
+- Parameterized notebooks for dynamic execution
+- Multi-task Databricks Job
+- Task dependencies for correct execution order
+- Scheduled job for automation
+- Basic validations and retry logic
+
+## Tools Used
+- Databricks Community Edition
+- Apache Spark
+- Databricks Jobs & Workflows
+
+## Author
+**Reddi Sankeerthi**  
+BTech – Data Science  
+Aspiring Data  Enthusiast  
+
+## Connect
+- LinkedIn: https://www.linkedin.com/posts/maddinareddisankeerthi_databrickswithidc-codebasics-indiandataclub-activity-7417591822731988992-aF5Z?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFxGtfwBB5nhO5M2F5A9lGeNvQx8T-786JY
+
+## Acknowledgements
+Databricks, Codebasics, Indian Data Club
