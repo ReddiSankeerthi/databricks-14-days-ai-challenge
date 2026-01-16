@@ -1,0 +1,49 @@
+# Day 08 – Unity Catalog & Data Governance  
+**Databricks 14 Days AI Challenge**
+
+## 📌 Overview
+Day 08 focused on understanding **Data Governance** using **Unity Catalog** in Databricks and how it helps manage data securely, consistently, and at scale across an organization.
+
+---
+
+## 🎯 Objectives
+- Understand the importance of **Unity Catalog** in enterprise data governance
+- Organize data using **Catalogs, Schemas, and Tables**
+- Implement **access control and permission management**
+- Explore **data lineage** across Bronze, Silver, and Gold layers
+
+---
+
+## 🛠️ Hands-on Implementation
+- Created **catalogs and schemas** using Unity Catalog
+- Registered **Delta tables** with proper metadata
+- Applied **permissions** to control data access
+- Explored **lineage flow across Bronze → Silver → Gold layers**
+
+---
+
+## 📚 Key Learnings
+- Unity Catalog provides centralized **governance and security**
+- Structured data organization improves **manageability and discoverability**
+- Fine-grained permissions help ensure **data privacy and compliance**
+- Lineage tracking builds **trust and transparency** in data pipelines
+
+---
+
+## 💡 Key Takeaway
+Unity Catalog is a critical component for building **secure, compliant, and well-governed data ecosystems**, especially in large-scale lakehouse architectures.
+
+---
+
+## 🔗 References
+- Databricks Unity Catalog Documentation  
+- Databricks Lakehouse Architecture
+
+---
+
+## 🏷️ Tags
+#Databricks` #DatabricksWithIDC` `Codebasics` 
+## AUTHOR
+**Maddina Reddi Sankeerthi**
+LINKEDIN:
+https://www.linkedin.com/posts/maddinareddisankeerthi_databrickswithidc-codebasics-indiandataclub-activity-7417949717386686464-tR0a?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFxGtfwBB5nhO5M2F5A9lGeNvQx8T-786JY
