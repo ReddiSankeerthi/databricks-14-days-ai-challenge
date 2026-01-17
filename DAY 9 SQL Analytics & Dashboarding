@@ -1,0 +1,50 @@
+# Databricks 14 Days AI Challenge – Day 9  
+## SQL Analytics & Dashboarding
+
+Day 9 focused on using **SQL Analytics** and **Dashboards** in Databricks to transform raw data into meaningful business insights.
+
+The objective was to understand how **SQL Warehouses** power analytical workloads and how dashboards help communicate insights effectively.
+
+---
+
+## Dataset Used
+- **Source:** `workspace.bronze.ecommerce_data_2019_oct`
+
+---
+
+## Key Learnings
+- Understanding **SQL Warehouses** and their role in scalable analytics  
+- Writing **advanced analytical SQL queries**  
+- Designing **interactive dashboards** for business reporting  
+- Using **visualizations and filters** for better data exploration  
+- Scheduling **automatic refreshes** for dashboards  
+
+---
+
+## Hands-on Implementation
+- Configured and used a **SQL Warehouse**
+- Executed analytical SQL queries on ecommerce data
+- Built dashboards to showcase key business metrics
+
+### Dashboards Created
+- 📈 **Daily Sales Performance**
+- 🥧 **Event Distribution by Type (Pie Chart)**
+- 📊 **Revenue Contribution by Brand**
+
+---
+
+## Key Takeaway
+SQL Warehouses enable fast and scalable analytics, while dashboards convert complex data into **clear, actionable insights**.  
+This exercise strengthened my understanding of how data analysts use **SQL and visualization** to tell impactful data stories.
+
+---
+
+## Acknowledgements
+- **Databricks**
+- **Codebasics**
+
+---
+
+## Author
+**Reddi Sankeerthi**  
+##LINKEDIN https://www.linkedin.com/posts/maddinareddisankeerthi_databrickswithidc-codebasics-databricks-activity-7418331185052794880-J02D?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFxGtfwBB5nhO5M2F5A9lGeNvQx8T-786JY
