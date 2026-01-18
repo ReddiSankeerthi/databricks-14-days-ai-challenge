@@ -1,0 +1,44 @@
+## 📅 Day 10 – Performance Optimization  
+### Databricks 14 Days AI Challenge
+
+Today's focus was on optimizing **Spark & Delta Lake performance**, with a deep dive into how real-world data engineering systems are tuned for efficiency.
+
+---
+
+## 🔧 What I Worked On
+
+- Analyzed Spark query execution plans using `EXPLAIN`
+- Implemented partitioning strategies by deriving `event_date` from timestamp columns
+- Optimized Delta tables using:
+  - `OPTIMIZE`
+  - `ZORDER`
+- Benchmarked query performance before and after optimization
+- Learned about **Serverless compute limitations**, where in-memory caching is not supported, and how storage-level optimizations compensate for it
+
+---
+
+## 📌 Key Learnings
+
+- Partition pruning significantly reduces data scanned
+- ZORDER improves selective query performance through data skipping
+- Choosing the right partition column (**DATE vs TIMESTAMP**) is critical
+- Performance tuning depends on the compute type (**Serverless vs All-Purpose**)
+
+---
+
+## 🧠 Key Insight
+
+> Performance optimization is not just about query logic —  
+> data layout and storage design play a major role.
+
+---
+
+## 📊 Dataset Used
+
+```text
+workspace.bronze.ecommerce.data_2019_oct
+
+##AUTHOR
+MADDINA REDDI SANKEERTHI
+
+##LINKEDIN https://www.linkedin.com/posts/maddinareddisankeerthi_databrickswithidc-codebasics-databricks-activity-7418670485296664576-amko?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFxGtfwBB5nhO5M2F5A9lGeNvQx8T-786JY
