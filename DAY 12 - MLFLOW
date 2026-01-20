@@ -1,0 +1,19 @@
+# Day 12 – Databricks MLflow Challenge
+
+**Author:** Reddi Sankeerthi  
+**LinkedIn:** [https://www.linkedin.com/posts/maddinareddisankeerthi_databrickswithidc-codebasics-databricks-activity-7419416403994255360-AFtf?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFxGtfwBB5nhO5M2F5A9lGeNvQx8T-786JY]
+## What I Learnt
+- Track ML experiments in Databricks using MLflow
+- Difference between **metrics**, **parameters**, and **artifacts**
+- How to log a **trained model** for reproducibility
+- Compare multiple runs to evaluate model performance
+
+## What I Did
+- Created an MLflow experiment: `price_prediction_v1`
+- Trained a **Linear Regression model**
+- Logged **parameters** (`model_type`, `test_size`) and **metrics** (`r2_score`)
+- Saved the **model as an artifact**
+- Ran **multiple experiments** and used **Compare Runs** to find the best model
+
+## Key Takeaway
+MLflow makes **experiment tracking, model reproducibility, and comparison** easy, which is essential for professional ML workflows.
