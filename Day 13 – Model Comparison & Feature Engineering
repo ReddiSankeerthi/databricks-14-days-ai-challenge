@@ -1,0 +1,80 @@
+# Day 13 – Model Comparison & Feature Engineering  
+**Databricks 14-Days AI Challenge**
+
+## 📌 Topic
+Model Comparison and Feature Engineering
+
+---
+
+## 🎯 Challenge Objectives
+- Train **3 different machine learning models**
+- Compare evaluation metrics using **MLflow**
+- Build a **Spark-based ML workflow**
+- Select the best-performing model based on metrics
+
+---
+
+## 📊 Dataset
+Source: Spark table `Copy_of_movies`
+
+### Selected Features
+- `Release_year`
+- `Budget`
+- `Revenue`
+
+### Target
+- `Imdb_rating`
+
+Only numeric columns were used, and null values were removed before training.
+
+---
+
+## ⚙️ Models Trained
+- Linear Regression  
+- Decision Tree Regressor  
+- Random Forest Regressor  
+
+---
+
+## 🧪 Experiment Tracking
+All experiments were tracked using **MLflow**, including:
+- Model parameters  
+- R² evaluation metric  
+- Trained model artifacts  
+
+Each model run was logged under a single MLflow experiment for comparison.
+
+---
+
+## 📈 Results (R² Score)
+
+| Model            | R² Score |
+|------------------|----------|
+| Linear Regression | 0.0527 |
+| Decision Tree     | **0.2076** |
+| Random Forest     | 0.1298 |
+
+✅ **Decision Tree Regressor** performed better compared to other models for this dataset.
+
+---
+
+## 💡 Key Learnings
+- Model performance depends heavily on **feature quality**, not just algorithm choice  
+- MLflow simplifies **experiment tracking and model comparison**  
+- Low R² scores highlight the need for **better feature engineering and data enrichment**  
+- Transparent evaluation helps guide iterative model improvement  
+
+---
+
+## 🛠️ Tech Stack
+- Apache Spark (Databricks)
+- Python
+- scikit-learn
+- MLflow
+
+---
+
+## ✍️ Author
+**Sankeerthi Reddi**  
+Aspiring Data Analyst | Data Science Enthusiast  
+🔗 LinkedIn: https://www.linkedin.com/posts/maddinareddisankeerthi_databrickswithidc-codebasics-indiandataclub-activity-7419796395282493440-7nVJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFxGtfwBB5nhO5M2F5A9lGeNvQx8T-786JY
