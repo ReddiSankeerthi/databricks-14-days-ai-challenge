@@ -1,0 +1,72 @@
+# Day 14 – AI-Powered Analytics (Genie & Mosaic AI)
+
+## 📌 Overview
+On Day 14 of the **Databricks 14 Days AI Challenge**, I explored **AI-Powered Analytics** using **Databricks Genie** and **Mosaic AI**.  
+The focus was on natural language querying, AI-assisted insights, and experiment tracking using MLflow.
+
+---
+
+## 🗂️ Dataset Used
+**Table:** `copy_of_movies`
+
+Key columns:
+- `title`
+- `industry`
+- `imdb_rating`
+- `revenue`
+- `budget`
+
+---
+
+## 🔹 1. Natural Language Analytics with Databricks Genie
+Using **Databricks Genie**, I queried the dataset using plain English questions such as:
+- *Show top 10 movies by revenue*
+- *What is the average IMDb rating by industry?*
+
+### Outcome:
+- Genie automatically generated SQL queries
+- Results were displayed as tables and charts
+- Enabled faster analytics without writing manual SQL
+
+---
+
+## 🔹 2. AI-Powered Insight
+Based on the Genie-generated analysis, the following insight was derived:
+
+> Certain movie industries consistently achieve higher IMDb ratings, while higher revenue does not always correlate with better ratings, indicating that commercial success and audience appreciation do not always align.
+
+This demonstrates how **AI-assisted analytics** can uncover meaningful patterns from data.
+
+---
+
+## 🔹 3. Simple NLP with Mosaic AI (MLflow)
+To demonstrate AI capabilities on textual data, I performed **sentiment analysis** on movie titles using a pre-trained Transformer model and tracked the experiment using **MLflow** as part of Mosaic AI.
+
+### Code Snippet:
+```python
+import mlflow
+from transformers import pipeline
+
+movies_df = spark.table("copy_of_movies")
+
+titles = (
+    movies_df
+    .select("title")
+    .dropna()
+    .limit(5)
+    .rdd
+    .map(lambda r: r[0])
+    .collect()
+)
+
+classifier = pipeline("sentiment-analysis")
+sentiment_results = classifier(titles)
+
+with mlflow.start_run(run_name="movie_title_sentiment"):
+    mlflow.log_param("model", "distilbert-base-uncased-finetuned-sst-2-english")
+    mlflow.log_param("text_source", "copy_of_movies.title")
+    mlflow.log_metric("sample_size", len(titles))
+
+##Author
+Maddina Reddi Sankeerthi
+##Linkedin [https://www.linkedin.com/posts/maddinareddisankeerthi_databrickswithidc-codebasics-databricks-activity-7420150928378449920-SmuP?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFxGtfwBB5nhO5M2F5A9lGeNvQx8T-786JY]
